@@ -5,11 +5,13 @@
   --dark-color: #0B0C13;
   --light-color: #f8f9fa;
   --primary-font-color: #F0F0F0;
-  --secondary-font-color: #E3E3E3;
-  --button-bg-color: #DB5D08;
+  --secondary-font-color: #9A9A9A;
+  --button-bg-color: linear-gradient(90deg,rgba(238, 48, 0, 1) 0%, rgba(241, 140, 0, 1) 100%);
 
 
-  --font-family: 'Poppins', sans-serif;
+
+  --font-family: "Open Sans", sans-serif;
+  --font-family2:"Racing Sans One", sans-serif;
 }
    
    
@@ -18,12 +20,14 @@
    
    
    /* Navbar custom styles */
+   .brand_logo{
+    height: 32px;
+
+   }
     .navbar {
       padding: 0.8rem 1rem;
     }
-    .navbar-brand img {
-      height: 50px; /* Logo size */
-    }
+  
     .nav-center {
       flex-grow: 1;
       display: flex;
@@ -35,10 +39,47 @@
     }
     .nav-btn {
       margin-left: auto;
+
+    }
+
+    .nav-item .nav-link {
+  margin: 0 10px;
+  font-weight: 500;
+  color: #C3C3C3;              /* Default color */
+  position: relative;          /* Required for transform */
+  transition: all 0.3s ease;
+  font-family: var(--font-family); 
+  font-size: 14px;  /* Smooth animation */
+}
+
+/* Hover effect */
+.nav-item .nav-link:hover {
+  color: #DB5D08;              /* Hover color same as active */
+  transform: translateY(-3px); /* Moves slightly upward */
+}
+
+/* Active state */
+.nav-item .nav-link.active {
+  color: #DB5D08;              /* Active color */
+  font-weight: 700;     
+         /* Slightly bolder for emphasis */
+}
+
+    .contact_us_button{
+      background: var(--button-bg-color);
+    
+      border-radius: 40px;
+    }
+    .contact_us_button a{
+  color: var(--primary-font-color) !important;
+  font-size: 16px;
+  font-family: var(--font-family);
+  font-weight: 600;
     }
 
     /* Mobile slide-in menu */
     .offcanvas-end {
       width: 250px;
       transition: transform 0.4s ease-in-out;
+      
     }

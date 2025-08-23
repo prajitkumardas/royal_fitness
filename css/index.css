@@ -1,0 +1,244 @@
+
+
+.hero {
+  height: 100vh; /* Full screen height */
+background-image: url('../assets/Heroimage.webp');
+
+/* Replace with your hero image path */
+  background-size: cover; /* Ensures full coverage */
+  background-position: center; /* Centers the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  text-align: center;
+  padding-top: 20px;
+}
+
+.hero .container {
+
+}
+
+.hero_text{
+    font-size: 64px;
+    font-family: var(--font-family2);
+}
+
+.hero_body{
+    font-size: 16px;
+
+}
+
+.visit_out_gym{
+    background: var(--button-bg-color);
+    border-radius: 40px;
+      color: var(--primary-font-color) !important;
+  font-size: 16px;
+  font-family: var(--font-family);
+  font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.watch-video {
+    background: transparent;
+    border: 2px solid var(--primary-font-color);
+    border-radius: 40px;
+      color: var(--primary-font-color) !important;
+  font-size: 16px;
+  font-family: var(--font-family);
+  font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.hero-buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ppl_group{
+    display:flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.ppl_group img{
+    height: 28px;
+    margin: 0 10px;
+}
+.ppl_group P{
+    margin: 0;
+}
+
+/* Popup background */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup content */
+.popup-content {
+  background: #000;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 90%;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+/* Close button */
+.popup .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.why-choose-us{
+    background-color: var(--dark-color);
+    padding: 40px 0;
+}
+
+.why_choose{
+    text-align:start;
+    font-size: 36px;
+    font-family: var(--font-family);
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: var(--primary-font-color);
+    ;
+}
+.why_choose_body{
+    margin-bottom: 32px;
+}
+
+.why_choose span{
+    color: var(--primary-color);
+}
+
+/* Why Choose Us Section */
+.image-stack {
+  position: relative;
+  display: inline-block;
+}
+.image-stack .main-img {
+  width: 85%;
+  border-radius: 15px;
+}
+.image-stack .overlay-img {
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  width: 60%;
+  border-radius: 15px;
+  border: 5px solid #fff;
+  transition: transform 0.3s ease;
+}
+.image-stack .overlay-img:hover {
+  transform: scale(1.05);
+}
+
+.feature .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.feature:hover .icon {
+  background-color: #0d6efd;
+  color: #fff;
+  transform: scale(1.1);
+}
+.why-choose-us p{
+    color: var(--secondary-font-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 1.6;
+
+}
+
+.feature_title{
+
+    font-weight: 600;
+    margin: 0;
+    color: var(--primary-font-color);
+    font-family: var(--font-family);
+}
+
+
+
+.feature-card {
+  background:var(--dark-color);
+  padding: 20px;
+  border-radius: 16px;
+  /* box-shadow: 0 4px 9px rgba(219, 219, 219, 0.08); */
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 24px;
+  border: solid 1px #2B2B2B;
+}
+
+.feature-card:hover {
+  box-shadow: 0 3px 18px rgba(219, 92, 8, 0.429);
+  transform: translateY(-4px);
+}
+
+.feature_title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.feature_body {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .image-stack .main-img {
+    width: 100%;
+  }
+  .image-stack .overlay-img {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    margin-top: 15px;
+  }
+}
