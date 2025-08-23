@@ -1,0 +1,44 @@
+   
+
+:root {
+  --primary-color: #DB5D08; /* Bootstrap danger red */
+  --dark-color: #0B0C13;
+  --light-color: #f8f9fa;
+  --primary-font-color: #F0F0F0;
+  --secondary-font-color: #E3E3E3;
+  --button-bg-color: #DB5D08;
+
+
+  --font-family: 'Poppins', sans-serif;
+}
+   
+   
+   
+   
+   
+   
+   /* Navbar custom styles */
+    .navbar {
+      padding: 0.8rem 1rem;
+    }
+    .navbar-brand img {
+      height: 50px; /* Logo size */
+    }
+    .nav-center {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .nav-item .nav-link {
+      margin: 0 10px;
+      font-weight: 500;
+    }
+    .nav-btn {
+      margin-left: auto;
+    }
+
+    /* Mobile slide-in menu */
+    .offcanvas-end {
+      width: 250px;
+      transition: transform 0.4s ease-in-out;
+    }
