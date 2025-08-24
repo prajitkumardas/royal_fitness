@@ -1,234 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Fitness Gym</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Royal Fitness Gym</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Racing+Sans+One&display=swap"
-    rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/index.css" />
-</head>
-<script src="js/script.js"></script>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="" href="index.html">
-        <img class="brand_logo" src="assets/rylfitnesslogo.png" alt="Logo" />
-      </a>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Racing+Sans+One&display=swap"
+      rel="stylesheet" />
+    <!-- AOS for scroll animations -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-      <!-- Hamburger button -->
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-      <!-- Center menu (desktop) -->
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav nav-center">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class href="index.html">
+          <img class="brand_logo" src="assets/rylfitnesslogo.png" alt="Logo" />
+        </a>
+
+        <!-- Hamburger button -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Center menu (desktop) -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav nav-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+          </ul>
+          <!-- Right button -->
+          <div class="contact_us_button">
+            <a href="programs.html" class="btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div
+      class="offcanvas offcanvas-end bg-dark text-white"
+      tabindex="-1"
+      id="mobileMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link text-white" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link text-white" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="programs.html">Programs</a>
+            <a class="nav-link text-white" href="programs.html">Programs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link text-white" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="location.html">Location</a>
+            <a class="nav-link text-white" href="location.html">Location</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blogs.html">Blogs</a>
+            <a class="nav-link text-white" href="blogs.html">Blogs</a>
           </li>
         </ul>
-        <!-- Right button -->
-        <div class="contact_us_button">
-          <a href="programs.html" class="btn">Contact Us</a>
-        </div>
+        <a href="programs.html" class="btn btn-danger w-100 mt-3">Join Now</a>
       </div>
     </div>
-  </nav>
 
-  <!-- Offcanvas Menu for Mobile -->
-  <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title">Menu</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    <!-- Hero Section -->
+   <section class="hero">
+  <div class="container">
+    <!-- Heading -->
+    <h1 class="hero_text" data-aos="fade-down" data-aos-delay="100">
+      Transform Energy Into Strength
+    </h1>
+
+    <!-- Paragraph -->
+    <p class="hero_body" data-aos="fade-up" data-aos-delay="200">
+      Unlock your full potential with expert training, modern equipment, and
+      a community that pushes you forward.
+    </p>
+
+    <!-- Buttons -->
+    <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="300">
+      <button type="button" class="visit_out_gym primary_cta_button">
+        Visit Our Gym
+      </button>
+      <button
+        type="button"
+        class="watch-video btn_primary"
+        onclick="openPopup()">
+        Watch Video
+      </button>
     </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="programs.html">Programs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="location.html">Location</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="blogs.html">Blogs</a>
-        </li>
-      </ul>
-      <a href="programs.html" class="btn btn-danger w-100 mt-3">Join Now</a>
+
+    <!-- Popup Modal -->
+    <div id="videoPopup" class="popup" data-aos="fade-in" data-aos-delay="400">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <iframe
+          id="youtubeVideo"
+          width="560"
+          height="315"
+          src
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- People group -->
+    <div class="ppl_group" data-aos="fade-up" data-aos-delay="500">
+      <img src="assets/people_group.png" alt="people group" />
+      <p>250+ Members</p>
     </div>
   </div>
+</section>
 
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side Images -->
+          <div class="col-lg-6 text-center mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="image-stack">
+              <img
+                src="assets/gym_1.jpg"
+                alt="Gym Image"
+                class="img-fluid rounded shadow-lg main-img" />
+              <img
+                src="assets/gym_2.jpg"
+                alt="Gym Image"
+                class="img-fluid rounded shadow-lg overlay-img" />
+            </div>
+          </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero_text">Transform Energy Into Strength</h1>
-      <p class="hero_body">
-        Unlock your full potential with expert training, modern equipment,
-        and a community that pushes you forward.
-      </p>
-      <div class="hero-buttons">
-        <button type="button" class="visit_out_gym btn_primary">Visit Our Gym</button>
-        <button type="button" class="watch-video btn_primary" onclick="openPopup()">Watch Video</button>
-      </div>
-      <!-- Popup Modal -->
-      <div id="videoPopup" class="popup">
-        <div class="popup-content">
-          <span class="close" onclick="closePopup()">&times;</span>
-          <iframe id="youtubeVideo" width="560" height="315" src="" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <!-- Right Side Content -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 class="section_heading why_choose">
+              Why Choose <span>Royal Fitness?</span>
+            </h2>
+            <p class="why_choose_body section_body">
+              At <strong>Our Gym</strong>, we are committed to transforming your
+              fitness journey with expert guidance, modern equipment, and a
+              supportive community.
+            </p>
+
+            <!-- Why Choose Us Accordion -->
+            <div class="accordion" id="whyChooseUs">
+
+              <!-- 1. Clean & Safe Environment -->
+              <div class="accordion-item glass-card" data-aos="fade-up"
+                data-aos-delay="100">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas fa-broom me-2"></i> Clean & Safe Environment
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#whyChooseUs">
+                  <div class="accordion-body">
+                    Spotless interiors, regular sanitization, and a hygienic
+                    atmosphere for your peace of mind.
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Cutting-edge Equipment -->
+              <div class="accordion-item glass-card" data-aos="fade-up"
+                data-aos-delay="200">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-dumbbell me-2"></i> Cutting-edge Equipment
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#whyChooseUs">
+                  <div class="accordion-body">
+                    State-of-the-art machines and tools designed for efficiency
+                    and maximum results.
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Professional Trainers -->
+              <div class="accordion-item glass-card" data-aos="fade-up"
+                data-aos-delay="300">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    <i class="fas fa-user-tie me-2"></i> Professional Trainers
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#whyChooseUs">
+                  <div class="accordion-body">
+                    Certified experts guiding you with personalized workouts,
+                    diet tips, and motivation.
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Holistic Programs -->
+              <div class="accordion-item glass-card" data-aos="fade-up"
+                data-aos-delay="400">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseFour">
+                    <i class="fas fa-leaf me-2"></i> Holistic Programs
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#whyChooseUs">
+                  <div class="accordion-body">
+                    Balanced fitness plans blending strength, cardio, yoga, and
+                    mindfulness practices.
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. Special Care for Handicap & Senior -->
+              <div class="accordion-item glass-card" data-aos="fade-up"
+                data-aos-delay="500">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false"
+                    aria-controls="collapseFive">
+                    <i class="fas fa-wheelchair me-2"></i> Special Care for
+                    Handicap & Senior
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#whyChooseUs">
+                  <div class="accordion-body">
+                    Inclusive fitness with customized training and dedicated
+                    support for seniors & differently abled.
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6. Flexible Timing -->
+              <div class="accordion-item glass-card" data-aos="fade-up"
+                data-aos-delay="600">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false"
+                    aria-controls="collapseSix">
+                    <i class="fas fa-clock me-2"></i> Flexible Timing
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#whyChooseUs">
+                  <div class="accordion-body">
+                    Open Monday to Saturday from <strong>5:30 AM to 11:30
+                      PM</strong> to fit your busy schedule.
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7. Parking Facility -->
+              <div class="accordion-item glass-card m-0" data-aos="fade-up"
+                data-aos-delay="700">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false"
+                    aria-controls="collapseSeven">
+                    <i class="fas fa-parking me-2"></i> Parking Facility
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse"
+                  aria-labelledby="headingSeven"
+                  data-bs-parent="#whyChooseUs">
+                  <div class="accordion-body">
+                    Hassle-free vehicle parking space so you can focus only on
+                    your workout.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Services Section -->
+      <section class="our_programs">
+  <div class="container text-center">
+    <!-- Heading -->
+    <h2 class="section_heading" data-aos="fade-down">
+      We Are <span>Best</span> In
+    </h2>
+
+    <!-- Paragraph -->
+    <p class="section_body" data-aos="fade-up">
+      Explore a wide range of workouts designed for every fitness goal
+    </p>
+
+    <div class="row g-4">
+      <!-- Service Card 1 -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="card service-card h-100">
+          <div class="card-img-wrapper position-relative">
+            <img src="assets/strenght.jpg" class="card-img-top" alt="Strength Training">
+            <div class="overlay-text">Strength Training</div>
+          </div>
         </div>
       </div>
-      <div class="ppl_group">
-        <img src="assets/people_group.png" alt="people group" />
-        <p>250+ Members</p>
+
+      <!-- Service Card 2 -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="card service-card h-100">
+          <div class="card-img-wrapper position-relative">
+            <img src="assets/bodybuilding.jpg" class="card-img-top" alt="Body Building">
+            <div class="overlay-text">Body Building</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="card service-card h-100">
+          <div class="card-img-wrapper position-relative">
+            <img src="assets/cardio.jpg" class="card-img-top" alt="Cardio">
+            <div class="overlay-text">Cardio</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="card service-card h-100">
+          <div class="card-img-wrapper position-relative">
+            <img src="assets/powerlifting.webp" class="card-img-top" alt="Power Lifting">
+            <div class="overlay-text">Power Lifting</div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Why Choose Us Section -->
-  <section class="why-choose-us py-5">
-    <div class="container">
-      <div class="row align-items-center">
+    <!-- View All Services Button -->
+    <div class="mt-5" data-aos="zoom-in" data-aos-delay="500">
+      <a href="programs.html" class="btn primary_cta_button px-4 py-2">View All Services</a>
+    </div>
+  </div>
+</section>
 
-        <!-- Left Side Images -->
-        <div class="col-lg-5 text-center mb-4 mb-lg-0" data-aos="fade-right">
-          <div class="image-stack">
-            <img src="assets/gym1.jpg" alt="Gym Image" class="img-fluid rounded shadow-lg main-img">
-            <img src="assets/gym2.jpg" alt="Gym Image" class="img-fluid rounded shadow-lg overlay-img">
+
+
+
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+  <div class="container">
+    <h2 class="section_heading text-center mb-4" data-aos="fade-down">
+      What Our <span>Members</span> Say
+    </h2>
+    <p class="section_body text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+      Hear from our satisfied members about their fitness journey with us.
+    </p>
+
+    <!-- ✅ Swiper Container -->
+    <div class="swiper testimonial-swiper" data-aos="zoom-in" data-aos-delay="200">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">
+              Safe space for open talks about mental health with my teen.
+            </p>
+            <div class="testimonial-author"><strong>- Sarah</strong></div>
           </div>
         </div>
 
-        <!-- Right Side Content -->
-        <div class="col-lg-7" data-aos="fade-left">
-          <h2 class="fw-bold mb-3 why_choose">Why Choose <span>Royal Fitness?</span></h2>
-          <p class="why_choose_body">
-            At <strong>Our Gym</strong>, we are committed to transforming your fitness journey
-            with expert guidance, modern equipment, and a supportive community.
-          </p>
-
-          <!-- Features -->
-          <div class="feature-card d-flex align-items-start " data-aos="fade-up" data-aos-delay="100">
-            <span class="icon bg-light text-primary rounded-circle me-3">
-              <i class="fas fa-shield-alt"></i>
-            </span>
-            <div>
-              <h5 class="feature_title">Clean & Safe Environment</h5>
-              <p class="feature_body">Workout in a hygienic, sanitized, and well-maintained space designed for your
-                safety and comfort.</p>
-            </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">
+              The trainers are so supportive! I’ve seen a huge improvement in my energy levels.
+            </p>
+            <div class="testimonial-author"><strong>- John</strong></div>
           </div>
+        </div>
 
-          <div class="feature-card d-flex align-items-start " data-aos="fade-up" data-aos-delay="200">
-            <span class="icon bg-light text-primary rounded-circle me-3">
-              <i class="fas fa-dumbbell"></i>
-            </span>
-            <div>
-              <h5 class="feature_title">Cutting-Edge Equipment</h5>
-              <p class="feature_body">Access the latest fitness machines and technology for effective and result-driven
-                training.</p>
-            </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">
+              The personalized programs keep me motivated and on track every week.
+            </p>
+            <div class="testimonial-author"><strong>- Priya</strong></div>
           </div>
+        </div>
 
-          <div class="feature-card d-flex align-items-start " data-aos="fade-up" data-aos-delay="300">
-            <span class="icon bg-light text-primary rounded-circle me-3">
-              <i class="fas fa-user-tie"></i>
-            </span>
-            <div>
-              <h5 class="feature_title">Professional Trainers</h5>
-              <p class="feature_body">Get expert guidance from certified trainers dedicated to helping you achieve your
-                fitness goals.</p>
-            </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
+          <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">
+              Safe space for open talks about mental health with my teen. 
+            </p>
+            <div class="testimonial-author"><strong>- Sarah</strong></div>
           </div>
+        </div>
 
-          <div class="feature-card d-flex align-items-start" data-aos="fade-up" data-aos-delay="400">
-            <span class="icon bg-light text-primary rounded-circle me-3">
-              <i class="fas fa-heartbeat"></i>
-            </span>
-            <div>
-              <h5 class="feature_title">Holistic Programs</h5>
-              <p class="feature_body">Comprehensive fitness plans combining workouts, nutrition, and recovery for
-                complete well-being.</p>
-            </div>
+        <!-- Slide 5 -->
+        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="500">
+          <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">
+              The trainers are so supportive! I’ve seen a huge improvement in my energy levels.
+            </p>
+            <div class="testimonial-author"><strong>- John</strong></div>
           </div>
+        </div>
 
-          <div class="feature-card d-flex align-items-start" data-aos="fade-up" data-aos-delay="500">
-            <span class="icon bg-light text-primary rounded-circle me-3">
-              <i class="fas fa-wheelchair"></i>
-            </span>
-            <div>
-              <h5 class="feature_title">Inclusive Care</h5>
-              <p class="feature_body">Special support and tailored programs for senior citizens and differently-abled
-                individuals.</p>
-            </div>
+        <!-- Slide 6 -->
+        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="600">
+          <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">
+              The personalized programs keep me motivated and on track every week.
+            </p>
+            <div class="testimonial-author"><strong>- Priya</strong></div>
           </div>
+        </div>
+      </div>
 
-          <div class="feature-card d-flex align-items-start" data-aos="fade-up" data-aos-delay="700">
-            <span class="icon bg-light text-primary rounded-circle me-3">
-              <i class="fas fa-parking"></i>
-            </span>
-            <div>
-              <h5 class="feature_title">Ample Parking Facility</h5>
-              <p class="feature_body">Enjoy hassle-free visits with secure and convenient parking space for all members.
-              </p>
-            </div>
-          </div>
+      <!-- ✅ Pagination & Controls -->
+      <div class="testimonial-controls" data-aos="fade-up" data-aos-delay="300">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-nav">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
 
-          <div class="feature-card d-flex align-items-start" data-aos="fade-up" data-aos-delay="600">
-            <span class="icon bg-light text-primary rounded-circle me-3">
-              <i class="fas fa-clock"></i>
-            </span>
-            <div>
-              <h5 class="feature_title">Flexible Timings</h5>
-              <p class="feature_body">Open from <strong>5:30 AM to 11:30 PM, Monday to Saturday</strong> to match your
-                lifestyle.</p>
-            </div>
-          </div>
+    </div>
+  </div>
+</section>
 
 
 
-          
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Left Section -->
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="assets/rylfitnesslogo.png" alt="Royal Fitness Gym Logo" />
+      </div>
+      <p class="footer-address">College Road, Champadanga, Hooghly, West Bengal 712413</p>
+      <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fas fa-envelope"></i> info@royalfitness.com</p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="footer-right">
+      <div class="footer-column">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Membership Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Social</h4>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
     </div>
-  </section>
+
+    
+  </div>
+
+  <!-- Bottom -->
+<div class="footer-container footer-bottom">
+  <p>&copy; 2025 Royal Fitness Gym. All Rights Reserved.</p>
+  <p class="designer-credit">
+    Crafted with passion by 
+    <a href="https://www.behance.net/pradas3" target="_blank" rel="noopener noreferrer">Prajit Designs</a>
+
+  </p>
+</div>
+
+</footer>
 
 
 
@@ -239,22 +603,87 @@
 
 
 
+<script>
+  const testimonialSwiper = new Swiper('.testimonial-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1, // mobile default
+
+    // Pagination (dots)
+    pagination: {
+      el: '.testimonial-swiper .swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation (arrows)
+    navigation: {
+      nextEl: '.testimonial-swiper .swiper-button-next',
+      prevEl: '.testimonial-swiper .swiper-button-prev',
+    },
+
+    // Responsive Breakpoints
+    breakpoints: {
+      768: { slidesPerView: 2, spaceBetween: 24 }, // tablets
+      1200: { slidesPerView: 3, spaceBetween: 32 } // laptops/desktops
+    }
+  });
+</script>
 
 
 
 
 
 
+<script>
+  const track = document.getElementById("track");
+  const cards = document.querySelectorAll(".testimonial-card");
+  let index = 0;
+
+  function moveSlide(step) {
+    const totalCards = cards.length;
+    const cardWidth = cards[0].offsetWidth + 20; // card + margin
+    const maxIndex = totalCards - Math.floor(track.offsetWidth / cardWidth);
+    index += step;
+    if (index < 0) index = 0;
+    if (index > maxIndex) index = maxIndex;
+    track.style.transform = `translateX(${-index * cardWidth}px)`;
+  }
+
+/* AOS JS */
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 120,
+  });
+</script>
 
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,  // Animation speed in ms
-      once: true       // Animation happens only once while scrolling
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
 
-</html>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+        <script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true // Animate only once
+  });
+</script>
+    </body>
+  </html>
