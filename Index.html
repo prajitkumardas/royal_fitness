@@ -78,9 +78,9 @@
             <li class="nav-item">
               <a class="nav-link" href="location.html">Location</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="blogs.html">Blogs</a>
-            </li>
+            </li> -->
           </ul>
           <!-- Right button -->
           <div class="contact_us_button">
@@ -119,9 +119,9 @@
           <li class="nav-item">
             <a class="nav-link text-white" href="location.html">Location</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text-white" href="blogs.html">Blogs</a>
-          </li>
+          </li> -->
         </ul>
         <a href="programs.html" class="btn btn-danger w-100 mt-3">Join Now</a>
       </div>
@@ -197,11 +197,11 @@
           </div>
 
           <!-- Right Side Content -->
-          <div class="col-lg-6" data-aos="fade-left">
+          <div class="col-lg-6" data-aos="fade-down">
             <h2 class="section_heading why_choose">
               Why Choose <span>Royal Fitness?</span>
             </h2>
-            <p class="why_choose_body section_body">
+            <p class="why_choose_body section_body" data-aos="fade-down">
               At <strong>Our Gym</strong>, we are committed to transforming your
               fitness journey with expert guidance, modern equipment, and a
               supportive community.
@@ -551,9 +551,9 @@
       <div class="footer-column">
         <h4>Pages</h4>
         <ul>
+           <li><a href="Index.html">Home</a></li>
           <li><a href="programs.html">Programs</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="blogs.html">Blogs</a></li>
           <li><a href="location.html">Location</a></li>
         </ul>
       </div>
@@ -593,6 +593,61 @@
 </div>
 
 </footer>
+
+
+<!-- WhatsApp Floating Button -->
+<!-- Floating WhatsApp -->
+<div class="wa-container">
+  <!-- Hidden checkbox toggle -->
+  <input type="checkbox" id="wa-toggle" hidden>
+  
+  <!-- Floating icon -->
+  <label for="wa-toggle" class="wa-icon">
+    <i class="fab fa-whatsapp"></i>
+  </label>
+
+  <!-- Popup -->
+  <div class="wa-popup">
+    <div class="wa-header">
+      <div>
+<img class="whats_gym_logo" src="assets/logo2.png" alt="">
+      <strong>Royal Fitness</strong>
+      </div>
+      
+      
+      <label for="wa-toggle" class="wa-close">✖</label>
+    </div>
+    <div class="wa-body">
+      <div id="typing" class="typing">
+        <span></span><span></span><span></span>
+      </div>
+      <div id="message" class="message"></div>
+    </div>
+    <div class="wa-footer">
+      <a href="https://wa.me/911234567890" target="_blank">Click to start chat</a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.getElementById("wa-toggle").addEventListener("change", function() {
+  if (this.checked) {
+    let typing = document.getElementById("typing");
+    let message = document.getElementById("message");
+    typing.style.display = "flex";
+    message.style.display = "none";
+
+    setTimeout(() => {
+      typing.style.display = "none";
+      message.innerHTML = "<strong>Royal Fitness</strong><br>Welcome to Royal Fitness! How can we help you today?";
+      message.style.display = "block";
+    }, 1000); // show message after 2s
+  }
+});
+</script>
+
+<!-- Floating WhatsApp -->
 
 
 
