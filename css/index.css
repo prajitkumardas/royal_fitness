@@ -116,7 +116,7 @@
   color: var(--primary-font-color);
 }
 .why_choose_body {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .why_choose span {
@@ -376,7 +376,7 @@
   margin: 0;
   width: 36px;
   height: 36px;
-  background: #12131c;
+  background: #1C1D26;
   border-radius: 50%;
   display: flex;
   justify-content: center;

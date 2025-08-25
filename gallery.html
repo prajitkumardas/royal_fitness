@@ -1,0 +1,363 @@
+<!-- Our Services Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Royal Fitness Gym</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Racing+Sans+One&display=swap" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a href="index.html">
+        <img class="brand_logo" src="assets/rylfitnesslogo.png" alt="Logo" />
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav nav-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+          <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+        </ul>
+        <div class="contact_us_button">
+          <a href="programs.html" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="programs.html">Programs</a></li>
+        <li class="nav-item"><a class="nav-link text-white active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="location.html">Location</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="blogs.html">Blogs</a></li>
+      </ul>
+      <a href="programs.html" class="btn btn-danger w-100 mt-3">Join Now</a>
+    </div>
+  </div>
+
+  <!--Hero Section -->
+   <section class="section-hero">
+  <div class="container text-center">
+   
+    <h1 class="hero-title" data-aos="fade-down">Moments of <span>Strength</span>, Stories of <span>Transformation</span></h1>
+    <p class="hero_body" data-aos="fade-up">
+      Explore our gallery and see the energy, dedication, and transformation that define our fitness community. Real people. Real results.
+    </p>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-container">
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="workout">Workout</button>
+        <button class="tab-btn" data-tab="interior">Gym Interior</button>
+        <button class="tab-btn" data-tab="equipment">Equipment</button>
+      </div>
+
+      <!-- Workout Tab -->
+      <div id="workout" class="tab-content active gallery-grid">
+        <img src="assets/wo1.webp" alt="Workout 1" class="gallery-img">
+        <img src="assets/wo2.webp" alt="Workout 2" class="gallery-img">
+        <img src="assets/wo3.webp" alt="Workout 3" class="gallery-img">
+      </div>
+
+      <!-- Interior Tab -->
+      <div id="interior" class="tab-content gallery-grid">
+        <img src="assets/inte1.webp" alt="Interior 1" class="gallery-img">
+        <img src="https://via.placeholder.com/400x300?text=Interior+2" alt="Interior 2" class="gallery-img">
+        <img src="https://via.placeholder.com/400x300?text=Interior+3" alt="Interior 3" class="gallery-img">
+      </div>
+
+      <!-- Equipment Tab -->
+      <div id="equipment" class="tab-content gallery-grid">
+        <img src="assets/eq1.webp" alt="Equipment 1" class="gallery-img">
+        <img src="assets/eq2.webp" alt="Equipment 2" class="gallery-img">
+        <img src="https://via.placeholder.com/400x300?text=Equipment+3" alt="Equipment 3" class="gallery-img">
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+      <span class="close">&times;</span>
+      <span class="prev">&#10094;</span>
+      <img src="" alt="Lightbox Image" id="lightboxImage">
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+</section>
+
+<!-- Transformation Section -->
+
+<section class="transform-section">
+  <div class="container">
+    <div class="transform-container">
+      <h2 class="section_heading" data-aos="fade-down">From <span>Goals</span> to <span>Greatness</span></h2>
+      <p class="section_body" data-aos="fade-up">These transformations aren't just physical—they're proof of what’s possible when you don’t quit.</p>
+      <div class="transform-gallery">
+        <img src="assets/wo1.webp" alt="Transformation 1" class="transform-img">
+        <img src="assets/wo2.webp" alt="Transformation 2" class="transform-img">
+        <img src="assets/wo3.webp" alt="Transformation 3" class="transform-img">
+        <img src="assets/inte1.webp" alt="Transformation 4" class="transform-img">
+      </div>
+    </div>
+
+    <!-- Transformation Lightbox -->
+    <div class="transform-lightbox">
+      <span class="transform-close">&times;</span>
+      <span class="transform-prev">&#10094;</span>
+      <img src="" alt="Lightbox" class="transform-lightbox-img">
+      <span class="transform-next">&#10095;</span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Offer Section -->
+<section class="offer-section">
+  <div class="container">
+    <div class="offer-box" data-aos="fade-up">
+      <div class="offer-content">
+        <h2 class="offer-title">Happy Hour Offer is Live!</h2>
+        <p class="offer-text">
+          Visit our gym between 1 PM and 3 PM to enjoy exclusive discounts on memberships and training sessions.
+        </p>
+      </div>
+      <button class="offer_button ">Visit Our Gym</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+ 
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="assets/rylfitnesslogo.png" alt="Royal Fitness Gym Logo" />
+        </div>
+        <p class="footer-address">College Road, Champadanga, Hooghly, West Bengal 712413</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> info@royalfitness.com</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-column">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="location.html">Location</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Membership Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Social</h4>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container footer-bottom">
+      <p>&copy; 2025 Royal Fitness Gym. All Rights Reserved.</p>
+      <p class="designer-credit">
+        Crafted with passion by 
+        <a href="https://www.behance.net/pradas3" target="_blank">Prajit Designs</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  // ✅ Initialize AOS
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+
+  // ✅ Tab switching functionality
+  const tabBtns = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      tabContents.forEach(content => {
+        content.classList.remove("active");
+        if(content.id === btn.dataset.tab) {
+          content.classList.add("active");
+        }
+      });
+    });
+  });
+
+  // ✅ Lightbox functionality
+  const lightbox = document.querySelector(".lightbox");
+  const lightboxImg = lightbox.querySelector("img");
+  const closeBtn = lightbox.querySelector(".close");
+  const prevBtn = lightbox.querySelector(".prev");
+  const nextBtn = lightbox.querySelector(".next");
+
+  let currentIndex = 0;
+  let images = [];
+
+  document.querySelectorAll(".tab-content img").forEach((img) => {
+    img.addEventListener("click", () => {
+      images = [...img.parentElement.querySelectorAll("img")];
+      currentIndex = images.indexOf(img);
+      showImage();
+      lightbox.style.display = "flex";
+    });
+  });
+
+  function showImage() {
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  closeBtn.addEventListener("click", () => lightbox.style.display = "none");
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage();
+  });
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+  });
+
+  // Close lightbox if clicked outside image
+  window.addEventListener("click", (e) => {
+    if(e.target === lightbox) lightbox.style.display = "none";
+  });
+</script>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const transformImgs = document.querySelectorAll(".transform-img");
+  const transformLightbox = document.querySelector(".transform-lightbox");
+  const transformLightboxImg = document.querySelector(".transform-lightbox-img");
+  const transformClose = document.querySelector(".transform-close");
+  const transformPrev = document.querySelector(".transform-prev");
+  const transformNext = document.querySelector(".transform-next");
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    transformLightbox.style.display = "flex";
+    transformLightboxImg.src = transformImgs[currentIndex].src;
+  }
+
+  function closeLightbox() {
+    transformLightbox.style.display = "none";
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + transformImgs.length) % transformImgs.length;
+    transformLightboxImg.src = transformImgs[currentIndex].src;
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % transformImgs.length;
+    transformLightboxImg.src = transformImgs[currentIndex].src;
+  }
+
+  transformImgs.forEach((img, index) => {
+    img.addEventListener("click", () => openLightbox(index));
+  });
+
+  transformClose.addEventListener("click", closeLightbox);
+  transformPrev.addEventListener("click", showPrev);
+  transformNext.addEventListener("click", showNext);
+
+  // Close lightbox when clicking outside image
+  transformLightbox.addEventListener("click", (e) => {
+    if (e.target === transformLightbox) closeLightbox();
+  });
+});
+
+</script>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
+
