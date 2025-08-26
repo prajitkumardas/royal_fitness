@@ -119,5 +119,6 @@
   font-weight: 500;
   color:var(--secondary-font-color);
   font-family: var(--font-family);
+  margin-bottom: 0;
 }
 

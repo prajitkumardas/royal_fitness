@@ -31,7 +31,7 @@
   <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="js/script.js"></script>
+  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
@@ -143,10 +143,14 @@
       <h2 class="section_heading" data-aos="fade-down">From <span>Goals</span> to <span>Greatness</span></h2>
       <p class="section_body" data-aos="fade-up">These transformations aren't just physical—they're proof of what’s possible when you don’t quit.</p>
       <div class="transform-gallery">
-        <img src="assets/wo1.webp" alt="Transformation 1" class="transform-img">
-        <img src="assets/wo2.webp" alt="Transformation 2" class="transform-img">
-        <img src="assets/wo3.webp" alt="Transformation 3" class="transform-img">
-        <img src="assets/inte1.webp" alt="Transformation 4" class="transform-img">
+        <img src="assets/TF1.jpeg" alt="Transformation 1" class="transform-img">
+        <img src="assets/TF2.jpeg" alt="Transformation 2" class="transform-img">
+        <img src="assets/TF3.jpeg" alt="Transformation 3" class="transform-img">
+        <img src="assets/TF4.jpeg" alt="Transformation 4" class="transform-img">
+        <img src="assets/TF5.jpeg" alt="Transformation 4" class="transform-img">
+        <img src="assets/TF6.jpeg" alt="Transformation 4" class="transform-img">
+        <img src="assets/TF7.jpeg" alt="Transformation 4" class="transform-img">
+
       </div>
     </div>
 
@@ -206,9 +210,9 @@
           <h4>Company</h4>
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Membership Policy</a></li>
+            <li><a href="#" id="careers-link">Careers</a></li>
+            <li><a href="#" id="terms-link">Terms & Conditions</a></li>
+            <li><a href="#" id="policy-link">Membership Policy</a></li>
           </ul>
         </div>
         <div class="footer-column">
@@ -232,7 +236,72 @@
   </footer>
 
 
-  <!-- WhatsApp Floating Button -->
+
+
+<!-- POPUPS WhatsApp Floating Button -->
+<div class="popup" id="careers-popup">
+  <div class="popup-content">
+    
+    <header>
+      <div class="pop-up-heading "><h3 class="" >Join Our Team</h3><span class="close">&times;</span></div>
+
+  <h4 class="career-heading mb-3"><strong>Passionate About Fitness? So Are We.</strong></h4>
+  <p class="career-subheading mb-4">At Royal Fitness, we’re more than just a place to work out — we’re a community built on energy, motivation, and a shared commitment to wellness. If you're driven, energetic, and love helping others become the best version of themselves, we’d love to have you on our team.</p>
+</header>
+
+<div class="career-content">
+  <h5 >Why Work With Us?</h5>
+  <ul>
+    <li>Positive, inspiring work environment</li>
+    <li>Opportunities for growth and training</li>
+    <li>Make a real impact on people’s lives</li>
+    <li>Exclusive staff perks and membership benefits</li>
+    <li>Access to top fitness equipment and programs</li>
+  </ul>
+</div>
+
+<div class="career-content ">
+  <h5 class="mb-3">Who We're Looking For</h5>
+  <p>We’re always on the lookout for motivated individuals who bring energy, expertise, and positivity to our space. Whether you’re a certified personal trainer, group class instructor, customer service pro, or passionate about fitness sales — there’s a place for you here.</p>
+  <p><strong>Current Roles:</strong></p>
+  <ul>
+    <li>Personal Trainers</li>
+    <li>Group Fitness Instructors (Yoga, HIIT, Zumba, etc.)</li>
+  </ul>
+</div>
+
+<div class="career-content">
+  <h5>Ready to Join the Team?</h5>
+  <p>Send your resume and a short cover letter to 
+    <a href="mailto:Teamroyalfitness22@gmail.com" class="email-link">Teamroyalfitness22@gmail.com</a> 
+    or WhatsApp <a class="email-link" href="https://wa.me/917797447966" target="_blank">7797447966</a></p>
+  <p>Tell us why you’re a great fit — and how you’ll help us move, sweat, and grow together.</p>
+  <p><strong>Let’s build a stronger community — one rep at a time. 💪</strong></p>
+</div>
+  </div>
+</div>
+
+
+
+
+<div class="popup" id="terms-popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Terms & Conditions</h2>
+    <p>By using this website, you agree to our terms and conditions.</p>
+  </div>
+</div>
+
+<div class="popup" id="policy-popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Membership Policy</h2>
+    <p>Read our membership policies carefully before joining.</p>
+  </div>
+</div>
+
+
+
 <!-- Floating WhatsApp -->
 <div class="wa-container">
   <!-- Hidden checkbox toggle -->
@@ -261,12 +330,15 @@
       <div id="message" class="message"></div>
     </div>
     <div class="wa-footer">
-      <a href="https://wa.me/911234567890" target="_blank">Click to start chat</a>
+      <a  href="https://wa.me/917797447966" target="_blank">Click to start chat</a>
     </div>
   </div>
 </div>
 
 
+
+
+<script src="js/script.js"></script>
 <script>
 document.getElementById("wa-toggle").addEventListener("change", function() {
   if (this.checked) {

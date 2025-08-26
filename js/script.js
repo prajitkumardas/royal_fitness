@@ -33,6 +33,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  // Footer popup
+  
+document.getElementById("careers-link").onclick = function(e){
+  e.preventDefault();
+  document.getElementById("careers-popup").style.display = "flex";
+};
+
+document.getElementById("terms-link").onclick = function(e){
+  e.preventDefault();
+  document.getElementById("terms-popup").style.display = "flex";
+};
+
+document.getElementById("policy-link").onclick = function(e){
+  e.preventDefault();
+  document.getElementById("policy-popup").style.display = "flex";
+};
+
+document.querySelectorAll(".close").forEach(btn => {
+  btn.addEventListener("click", function(){
+    this.closest(".popup").style.display = "none";
+  });
+});
+
+window.onclick = function(e) {
+  document.querySelectorAll(".popup").forEach(popup => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+};
+
+
 
 
 

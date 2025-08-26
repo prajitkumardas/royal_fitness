@@ -245,6 +245,7 @@
   clip-path: circle(0% at 50% 50%);
   animation: revealCircle 1s ease-out forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 250px;
 }
 
 .transform-img:hover {

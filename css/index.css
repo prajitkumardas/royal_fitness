@@ -107,6 +107,13 @@
   background-color: var(--dark-color);
   padding: 80px 0;
 }
+.container-for-why-choose-us-image{
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns items at the top */
+  height: 100%; /* Ensures full height column */
+  text-align: center; /* Keeps text centered horizontally */
+}
 
 .why_choose {
   text-align: start !important;
@@ -117,6 +124,7 @@
 }
 .why_choose_body {
   margin-bottom: 40px;
+  text-align: start;
 }
 
 .why_choose span {
@@ -125,25 +133,63 @@
 
 /* Why Choose Us Section */
 .image-stack {
-  position: relative;
-  display: inline-block;
+  position: relative !important;
+  
 }
-.image-stack .main-img {
-  width: 85%;
-  border-radius: 15px;
-  bottom: 0px;
+.image-stack  {
+      display: flex;
+    justify-content: end;
+    padding-right: 24px;
+
 }
-.image-stack .overlay-img {
-  position: absolute;
-  bottom: -20px;
-  left: 0px;
-  width: 60%;
+
+.i-3{
+   width: 30%;
+  border-radius: 16px;
+  left: 62px;
+  transition: transform 0.3s ease;
+top: 0;
+  z-index: 2;
+  max-height: 370px;
+  position:absolute;
+background-size: cover;
+
+}
+
+.i-1 {
+   width: 100%;       /* Fill container width */
+  height: auto;      /* Keep aspect ratio */
+  max-height: 400px; /* Don’t exceed 400px height */
+  object-fit: cover; /* Crop instead of squish */
+  border-radius: 24px;
+}
+
+.i-2 {
+   bottom: 0px;
+
+  right: 0px;
+width: 50%;
+  border-radius: 16px;
+
+  transition: transform 0.3s ease;
+  max-height: 400px;
+}
+
+
+.left-overlay-image{
+  width: 70%;
   border-radius: 15px;
   border: 5px solid #fff;
   transition: transform 0.3s ease;
+
+  position: absolute !important;
 }
 .image-stack .overlay-img:hover {
   transform: scale(1.05);
+}
+
+.image-2{
+
 }
 
 .feature .icon {
@@ -435,3 +481,5 @@ box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
     margin-top: 15px;
   }
 }
+
+
