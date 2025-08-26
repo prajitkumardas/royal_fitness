@@ -220,7 +220,7 @@ padding-top: 32px;
 }
 
 .offer-box {
-  background: linear-gradient(90deg, #EE3000 0%, #F18C00 100%);
+  background: linear-gradient(225deg, #FFC26E -17.39%, #B64700 32.33%, #B64700 65.64%, #F25228 113.12%);
   border-radius: 16px;
   padding: 32px;
   color: #fff;
@@ -395,7 +395,7 @@ padding-top: 32px;
 /* Floating button */
 .wa-container {
   position: fixed;
-  bottom: 20px;
+  bottom: 70px;
   right: 20px;
   z-index: 9999;
 }

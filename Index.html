@@ -1,96 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Royal Fitness Gym</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Fitness Gym</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Racing+Sans+One&display=swap" rel="stylesheet" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Racing+Sans+One&display=swap"
-      rel="stylesheet" />
-    <!-- AOS for scroll animations -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
-  <!-- AOS Animation Library -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Font Awesome CDN -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img class="brand_logo" src="assets/rylfitnesslogo.png" alt="Logo" />
+      </a>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
+      <!-- Hamburger button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script src="js/script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <a class href="index.html">
-          <img class="brand_logo" src="assets/rylfitnesslogo.png" alt="Logo" />
-        </a>
-
-        <!-- Hamburger button -->
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#mobileMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Center menu (desktop) -->
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav nav-center">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="programs.html">Programs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="location.html">Location</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="blogs.html">Blogs</a>
-            </li> -->
-          </ul>
-          <!-- Right button -->
-          <div class="contact_us_button">
-            <a href="programs.html" class="btn">Contact Us</a>
-          </div>
+      <!-- Desktop Menu -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav nav-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+        </ul>
+        <div class="contact_us_button">
+          <a href="programs.html" class="btn">Contact Us</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Offcanvas Menu for Mobile -->
+  <!-- ================= YOUR CONTENT STARTS HERE ================= -->
+  <!-- Offcanvas Menu for Mobile -->
     <div
       class="offcanvas offcanvas-end bg-dark text-white"
       tabindex="-1"
@@ -364,6 +331,8 @@
         </div>
       </section>
 
+      <!-- Why Choose Us Section -->
+
       <!-- Our Services Section -->
       <section class="our_programs">
   <div class="container text-center">
@@ -425,9 +394,6 @@
     </div>
   </div>
 </section>
-
-
-
 
 <!-- Testimonial Section -->
 <section class="testimonial-section">
@@ -524,16 +490,6 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
 <footer class="site-footer">
   <div class="footer-container">
     <!-- Left Section -->
@@ -593,152 +549,79 @@
 </div>
 
 </footer>
+  <!-- ================= END CONTENT ================= -->
 
-
-<!-- WhatsApp Floating Button -->
-<!-- Floating WhatsApp -->
-<div class="wa-container">
-  <!-- Hidden checkbox toggle -->
-  <input type="checkbox" id="wa-toggle" hidden>
-  
-  <!-- Floating icon -->
-  <label for="wa-toggle" class="wa-icon">
-    <i class="fab fa-whatsapp"></i>
-  </label>
-
-  <!-- Popup -->
-  <div class="wa-popup">
-    <div class="wa-header">
-      <div>
-<img class="whats_gym_logo" src="assets/logo2.png" alt="">
-      <strong>Royal Fitness</strong>
+  <!-- WhatsApp Floating Button -->
+  <div class="wa-container">
+    <input type="checkbox" id="wa-toggle" hidden>
+    <label for="wa-toggle" class="wa-icon"><i class="fab fa-whatsapp"></i></label>
+    <div class="wa-popup">
+      <div class="wa-header">
+        <div>
+          <img class="whats_gym_logo" src="assets/logo2.png" alt="">
+          <strong>Royal Fitness</strong>
+        </div>
+        <label for="wa-toggle" class="wa-close">✖</label>
       </div>
-      
-      
-      <label for="wa-toggle" class="wa-close">✖</label>
-    </div>
-    <div class="wa-body">
-      <div id="typing" class="typing">
-        <span></span><span></span><span></span>
+      <div class="wa-body">
+        <div id="typing" class="typing"><span></span><span></span><span></span></div>
+        <div id="message" class="message"></div>
       </div>
-      <div id="message" class="message"></div>
-    </div>
-    <div class="wa-footer">
-      <a href="https://wa.me/911234567890" target="_blank">Click to start chat</a>
+      <div class="wa-footer">
+        <a href="https://wa.me/911234567890" target="_blank">Click to start chat</a>
+      </div>
     </div>
   </div>
-</div>
 
+  <!-- ================= SCRIPTS ================= -->
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-document.getElementById("wa-toggle").addEventListener("change", function() {
-  if (this.checked) {
-    let typing = document.getElementById("typing");
-    let message = document.getElementById("message");
-    typing.style.display = "flex";
-    message.style.display = "none";
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    setTimeout(() => {
-      typing.style.display = "none";
-      message.innerHTML = "<strong>Royal Fitness</strong><br>Welcome to Royal Fitness! How can we help you today?";
-      message.style.display = "block";
-    }, 1000); // show message after 2s
-  }
-});
-</script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-<!-- Floating WhatsApp -->
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
 
+  <!-- Swiper Init -->
+  <script>
+    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      pagination: { el: '.testimonial-swiper .swiper-pagination', clickable: true },
+      navigation: { nextEl: '.testimonial-swiper .swiper-button-next', prevEl: '.testimonial-swiper .swiper-button-prev' },
+      breakpoints: { 768: { slidesPerView: 2, spaceBetween: 24 }, 1200: { slidesPerView: 3, spaceBetween: 32 } }
+    });
+  </script>
 
+  <!-- WhatsApp Typing Simulation -->
+  <script>
+    document.getElementById("wa-toggle").addEventListener("change", function() {
+      let typing = document.getElementById("typing");
+      let message = document.getElementById("message");
+      if (this.checked) {
+        typing.style.display = "flex";
+        message.style.display = "none";
+        setTimeout(() => {
+          typing.style.display = "none";
+          message.innerHTML = "<strong>Royal Fitness</strong><br>Welcome to Royal Fitness! How can we help you today?";
+          message.style.display = "block";
+        }, 1000);
+      }
+    });
+  </script>
 
-
-
-
-
-
-
-
-<script>
-  const testimonialSwiper = new Swiper('.testimonial-swiper', {
-    loop: true,
-    spaceBetween: 20,
-    slidesPerView: 1, // mobile default
-
-    // Pagination (dots)
-    pagination: {
-      el: '.testimonial-swiper .swiper-pagination',
-      clickable: true,
-    },
-
-    // Navigation (arrows)
-    navigation: {
-      nextEl: '.testimonial-swiper .swiper-button-next',
-      prevEl: '.testimonial-swiper .swiper-button-prev',
-    },
-
-    // Responsive Breakpoints
-    breakpoints: {
-      768: { slidesPerView: 2, spaceBetween: 24 }, // tablets
-      1200: { slidesPerView: 3, spaceBetween: 32 } // laptops/desktops
-    }
-  });
-</script>
-
-
-
-
-
-
-<script>
-  const track = document.getElementById("track");
-  const cards = document.querySelectorAll(".testimonial-card");
-  let index = 0;
-
-  function moveSlide(step) {
-    const totalCards = cards.length;
-    const cardWidth = cards[0].offsetWidth + 20; // card + margin
-    const maxIndex = totalCards - Math.floor(track.offsetWidth / cardWidth);
-    index += step;
-    if (index < 0) index = 0;
-    if (index > maxIndex) index = maxIndex;
-    track.style.transform = `translateX(${-index * cardWidth}px)`;
-  }
-
-/* AOS JS */
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true,
-    offset: 120,
-  });
-</script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
-
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-        <script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
-
-<script>
-  AOS.init({
-    duration: 1000, // Animation duration in ms
-    once: true // Animate only once
-  });
-</script>
-    </body>
-  </html>
+  <!-- AOS Init -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 120
+    });
+  </script>
+</body>
+</html>
