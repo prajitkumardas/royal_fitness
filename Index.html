@@ -28,26 +28,24 @@
 </head>
 <body>
   <!-- ================= NAVBAR ================= -->
+ <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
+      <a href="index.html">
         <img class="brand_logo" src="assets/rylfitnesslogo.png" alt="Logo" />
       </a>
-
-      <!-- Hamburger button -->
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Desktop Menu -->
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav nav-center">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link " href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+          <!-- <li class="nav-item"><a class="nav-link active" href="blogs.html">Blogs</a></li> -->
         </ul>
         <div class="contact_us_button">
           <a href="programs.html" class="btn">Contact Us</a>
@@ -56,43 +54,26 @@
     </div>
   </nav>
 
-  <!-- ================= YOUR CONTENT STARTS HERE ================= -->
-  <!-- Offcanvas Menu for Mobile -->
-    <div
-      class="offcanvas offcanvas-end bg-dark text-white"
-      tabindex="-1"
-      id="mobileMenu">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title">Menu</h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="programs.html">Programs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="location.html">Location</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link text-white" href="blogs.html">Blogs</a>
-          </li> -->
-        </ul>
-        <a href="programs.html" class="btn btn-danger w-100 mt-3">Join Now</a>
-      </div>
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+       <img class="brand_logo" src="assets/rylfitnesslogo.png" alt="Logo" />
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white " href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="programs.html">Programs</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="location.html">Location</a></li>
+        <!-- <li class="nav-item"><a class="nav-link text-white active" href="blogs.html">Blogs</a></li> -->
+      </ul>
+      <div class=" my-4">
+          <a href="programs.html"  type="button" class="visit_out_gym primary_cta_button">Contact Us</a>
+        </div>
+    </div>
+  </div>
 
     <!-- Hero Section -->
    <section class="hero">
@@ -397,7 +378,7 @@
     <h2 class="section_heading text-center" data-aos="fade-down">
       What Our <span>Members</span> Say
     </h2>
-    <p class="section_body text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+    <p class="section_body text-center" data-aos="fade-up" data-aos-delay="100">
       Hear from our satisfied members about their fitness journey with us.
     </p>
 
@@ -535,11 +516,11 @@
   </div>
 
   <!-- Bottom -->
-<div class="footer-container footer-bottom">
+<div class="footer-container footer-bottom copyright-section">
   <p>&copy; 2025 Royal Fitness Gym. All Rights Reserved.</p>
   <p class="designer-credit">
     Crafted with passion by 
-    <a href="https://www.behance.net/pradas3" target="_blank" rel="noopener noreferrer">Prajit Designs</a>
+    <a href="https://www.behance.net/pradas3" target="_blank" rel="noopener noreferrer">Prajit</a>
 
   </p>
 </div>

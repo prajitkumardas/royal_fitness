@@ -19,9 +19,8 @@
 .hero_text {
   font-size: 64px;
   font-family: var(--font-family2);
+  margin-bottom: 16px;
 }
-
-
 
 .visit_out_gym {
   background: var(--button-bg-color);
@@ -59,7 +58,7 @@
   flex: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 28px;
 }
 .ppl_group img {
   height: 28px;
@@ -107,8 +106,8 @@
   background-color: var(--dark-color);
   padding: 80px 0;
 }
-.container-for-why-choose-us-image{
-   display: flex;
+.container-for-why-choose-us-image {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Aligns items at the top */
   height: 100%; /* Ensures full height column */
@@ -134,49 +133,45 @@
 /* Why Choose Us Section */
 .image-stack {
   position: relative !important;
-  
 }
-.image-stack  {
-      display: flex;
-    justify-content: end;
-    padding-right: 24px;
-
+.image-stack {
+  display: flex;
+  justify-content: end;
+  padding-right: 24px;
 }
 
-.i-3{
-   width: 30%;
+.i-3 {
+  width: 30%;
   border-radius: 16px;
   left: 62px;
   transition: transform 0.3s ease;
-top: 0;
+  top: 0;
   z-index: 2;
   max-height: 370px;
-  position:absolute;
-background-size: cover;
-
+  position: absolute;
+  background-size: cover;
 }
 
 .i-1 {
-   width: 100%;       /* Fill container width */
-  height: auto;      /* Keep aspect ratio */
+  width: 100%; /* Fill container width */
+  height: auto; /* Keep aspect ratio */
   max-height: 400px; /* Don’t exceed 400px height */
   object-fit: cover; /* Crop instead of squish */
   border-radius: 24px;
 }
 
 .i-2 {
-   bottom: 0px;
+  bottom: 0px;
 
   right: 0px;
-width: 50%;
+  width: 50%;
   border-radius: 16px;
 
   transition: transform 0.3s ease;
   max-height: 400px;
 }
 
-
-.left-overlay-image{
+.left-overlay-image {
   width: 70%;
   border-radius: 15px;
   border: 5px solid #fff;
@@ -188,8 +183,7 @@ width: 50%;
   transform: scale(1.05);
 }
 
-.image-2{
-
+.image-2 {
 }
 
 .feature .icon {
@@ -209,7 +203,7 @@ width: 50%;
 .why-choose-us p {
   color: var(--secondary-font-color);
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -231,12 +225,12 @@ width: 50%;
   overflow: hidden;
   padding: 8px;
   margin-bottom: 1;
-  border: 1px solid #1B1C25;
+  border: 1px solid #1b1c25;
 }
 
 .glass-card:hover {
   transform: translateY(-5px);
-box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
+  box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
 }
 
 /* Accordion button */
@@ -254,18 +248,15 @@ box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
   font-family: "Font Awesome 5 Free"; /* or use Bootstrap Icons */
   font-weight: 900;
   content: "\f078"; /* Font Awesome chevron-down */
-  color: var(--secondary-font-color);   /* <-- your desired color */
+  color: var(--secondary-font-color); /* <-- your desired color */
   font-size: 16px;
 }
 .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
 }
 .accordion-button::after:hover {
- color: var(--primary-font-color);
+  color: var(--primary-font-color);
 }
-
-
-
 
 .accordion-button:focus {
   box-shadow: none;
@@ -367,7 +358,7 @@ box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
   background: #12131c;
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   font-family: "Inter", sans-serif;
   color: #333;
   height: 100%;
@@ -375,7 +366,7 @@ box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
 
 .quote-icon {
   font-size: 24px;
-  background-color: rgba(239,93,8,0.15);
+  background-color: rgba(239, 93, 8, 0.15);
   margin-bottom: 16px;
   height: 32px;
   width: 32px;
@@ -441,17 +432,15 @@ box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
   margin: 0;
   width: 36px;
   height: 36px;
-  background: #1C1D26;
+  background: #1c1d26;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s ease;
-  
 }
 
-.testimonial-controls .swiper-button-prev{
- 
+.testimonial-controls .swiper-button-prev {
 }
 
 .testimonial-controls .swiper-button-prev::after,
@@ -465,8 +454,6 @@ box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
 .testimonial-controls .swiper-button-next:hover {
   background-color: #ff5733; /* hover orange */
 }
-
-
 
 /* Responsive Fixes */
 @media (max-width: 768px) {
@@ -482,4 +469,65 @@ box-shadow: 0 1px 10px 4px rgba(241, 140, 0, 0.24);
   }
 }
 
+/* ================== RESPONSIVE FIXES ================== */
 
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+  
+  .hero_text {
+    font-size: 40px;
+  }
+  .hero_body {
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+  .hero-buttons {
+    margin-top: 24px;
+  }
+
+  .ppl_group {
+    margin-top: 24px;
+  }
+  .hero {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  height: auto;
+}
+
+.why-choose-us {
+  padding: 40px 0;
+}
+
+.section_body{
+  text-align: center;
+}
+.section_heading {
+  font-size: 32px;
+  text-align: center !important;
+  align-items: center;
+}
+.image-stack {
+  padding-right: 0;
+  margin-bottom: 16px;
+}
+
+.our_programs{
+  padding: 40px 0;
+}
+
+.testimonial-section{
+   padding: 40px 0;
+
+}
+
+
+}
+
+/* Medium devices (tablets, 577px - 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}

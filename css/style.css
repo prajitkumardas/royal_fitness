@@ -193,6 +193,7 @@ padding-top: 32px;
   font-size: 16px;
   font-family: var(--font-family);
   font-weight: 600;
+  text-decoration: none;
 
   border: none;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
@@ -613,4 +614,112 @@ line-height: 160%;
  font-size: 14px;
  margin-left: 24px;
  margin-right: 24px;
+}
+
+
+
+
+/* ================== RESPONSIVE FIXES ================== */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .navbar-toggler{
+    padding: 0;
+  }
+.offcanvas-header{
+  background-color: #12131c !important;
+}
+  .offcanvas.offcanvas-end{
+    border: none;
+  }
+  .hero_body{
+    width: 100%;
+  }
+  .offcanvas-body{
+    background-color: #12131c !important;
+    padding-top: 32px;
+  }
+.navbar-nav{
+  
+  display: flex;
+  justify-content:space-around;
+}
+  .nav-item .nav-link{
+    color: #c3c3c3 !important;
+    font-size: 20px !important;
+    margin-bottom: 24px;
+
+  }
+
+  .nav-item .nav-link.active{
+    color: var(--primary-color) !important;
+    font-size: 28px  !important;
+    margin-left: 16px;
+  }
+
+  .contact_us-in_canvas{
+    height: 48px;
+  }
+
+  .section-hero{
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .hero-title{
+    font-size: 32px;
+  }
+  .accordion-button{
+    padding: 16px 12px;
+  }
+
+
+  .offer-box{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+        margin-bottom: -100px;
+  }
+  .offer-title{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .offer-text{
+    margin-bottom: 16px;
+  }
+.site-footer{
+      
+}
+.footer-container{
+  gap: 24px;
+
+}
+.footer-right{
+  gap: 24px;
+}
+.footer-bottom{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.footer-bottom{
+  padding-top: 16px;
+}
+.copyright-section{
+  gap: 8px;
+}
+}
+
+/* Medium devices (tablets, 577px - 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 }

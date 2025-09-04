@@ -63,6 +63,22 @@
 
 
 
+/* ================== RESPONSIVE FIXES ================== */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 577px - 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+
 
 
 
