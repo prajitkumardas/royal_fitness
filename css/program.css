@@ -50,6 +50,7 @@
   letter-spacing: 0.5px;
   transition: background 0.3s ease;
   text-transform: uppercase;
+
 }
 
 .service-card:hover .overlay-text {
@@ -67,6 +68,18 @@
 
 /* Small devices (up to 576px) */
 @media (max-width: 576px) {
+
+  .programs_section{
+    padding: 40px 0;
+
+  }
+  .overlay-text{
+    font-size: 16px
+    
+  }
+  .card-img-wrapper img{
+    height: 200px;
+  }
 
 }
 

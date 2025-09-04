@@ -520,6 +520,17 @@
    padding: 40px 0;
 
 }
+ .programs_section{
+    padding: 40px 0;
+
+  }
+  .overlay-text{
+    font-size: 16px
+    
+  }
+  .card-img-wrapper img{
+    height: 200px;
+  }
 
 
 }

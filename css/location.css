@@ -112,3 +112,34 @@
     transform: scale(1);
   }
 }
+
+
+/* ================== RESPONSIVE FIXES ================== */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+  
+.map_section{
+  padding: 40px 0;
+
+}
+
+.map-container{
+  margin-right: 0;
+}
+.map-container iframe{
+  min-height: 350px;
+}
+
+.contact_form{
+margin-top: 16px;
+}
+}
+
+/* Medium devices (tablets, 577px - 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}

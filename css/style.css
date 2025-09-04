@@ -668,7 +668,7 @@ line-height: 160%;
   .section-hero{
     height: auto;
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 
   .hero-title{
@@ -698,6 +698,7 @@ line-height: 160%;
 }
 .footer-container{
   gap: 24px;
+  flex-direction: column;
 
 }
 .footer-right{
@@ -714,6 +715,9 @@ line-height: 160%;
 .copyright-section{
   gap: 8px;
 }
+
+.footer-two{
+padding-top: 40px;}
 }
 
 /* Medium devices (tablets, 577px - 991px) */

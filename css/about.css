@@ -102,6 +102,9 @@
   .about-us .small-img {
     flex: 1;
   }
+  .stat_container{
+    justify-content: center !important;
+  }
 }
 
 .gym-stats {
